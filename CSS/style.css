@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "pokemon";
+    src: url(../fonts/PokemonHollow.ttf);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    color: black;
+    background: rgb(255, 255, 255); 
+}
+
+header {
+    background-color: rgb(68,133,155); 
+    background: url(../images/headerIMG.png) no-repeat 50% 55%;
+    text-align: center;
+    font-family: pokemon;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+header > h1:hover{
+    color: blueviolet;
+}
+
+nav {
+    background-color: rgb(68,133,155);   
+    text-align: end;
+    border: solid 1px rgb(68,133,155); 
+    border-bottom-color: rgb(47, 95, 110);
+ 
+}
+nav > a{
+    font-size: x-large;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+/* main */
+main {
+    background-color: rgb(68,133,155);
+}
+
+ .home {
+    height: 85vh;
+    overflow: scroll;
+} 
+
+.contact {
+    height: 85vh;
+}
+
+/*Fiches pokemon*/
+section {
+    background-color: blueviolet;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* GRID IMAGE - PARAGRAPHE */
+.grid{
+    display: grid; 
+    grid-template-columns: 0.2fr 1.8fr; 
+     grid-template-rows: 1fr; 
+     gap: 0px 0px; 
+    grid-template-areas: 
+    ". .";  
+    border-bottom: dashed 2px rgb(68,133,155);  
+}
+/*---------------*/
+
+
+/* Section H1 ONLY*/
+section > h1 {
+    
+    text-align: center;
+    clear: both;
+}
+
+section > h1:hover {
+    color:rgb(88, 167, 194); 
+}
+/*-----------------*/
+
+
+article {
+    width: 18vh;
+    height: 18vh;
+    border: solid 2px;
+    margin: 20px;
+    margin-top: 0;
+    background-color: white;
+}
+
+article > img {
+    height: 18vh;
+    width: auto;   
+}
+
+
+/* Contact Forms */
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset > input {
+    width: 50%;
+}
+
+input[type="submit"] {
+    margin-top: 2px;
+    width: 20%;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgb(54, 108, 124); 
+    /* Flexbox */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+footer > img {
+    max-width: 100px;
+    height: 100px;
+    margin-bottom: 80px;
+    margin-right: -120px;
+    
+}
+
+footer > img:active {
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 165px;
+    margin-right: -210px;
+}
+
+
+.social {
+    max-width: 25px;
+    height: auto;
+    margin: 10px;
+}
+
